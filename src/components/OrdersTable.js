@@ -9,12 +9,6 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import getRandomData from '../utils/randomData';
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 450,
-  },
-});
-
 const headCells = [
   { id: 'orderNumber', label: 'Номер' },
   { id: 'city', label: 'Филиал' },
@@ -26,11 +20,10 @@ const headCells = [
 const rows = getRandomData(150);
 
 export default function SimpleTable() {
-  const classes = useStyles();
 
   return (
     <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
+      <Table>
         <TableHead>
           <TableRow>
             {headCells.map((headCell) => (
