@@ -64,7 +64,7 @@ const EnhancedTableHead = (props) => {
 
   const StyledTableSortLabel = withStyles(theme => ({
     root: {
-      fontSize: 25,
+      // fontSize: '2em',
     },
   }))(TableSortLabel);
 
@@ -173,7 +173,7 @@ export default function OrdersTable() {
 
   const StyledTableCell = withStyles(theme => ({
     body: {
-      fontSize: 25,
+      // fontSize: 25,
     },
   }))(TableCell);
 

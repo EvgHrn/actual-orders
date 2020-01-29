@@ -11,7 +11,7 @@ const getRandomData = (count) => {
       citis[Math.floor(Math.random() * Math.floor(citis.length - 1))],
       `${10 + Math.floor(Math.random() * Math.floor(21))}.03.2020`,
       products[Math.floor(Math.random() * Math.floor(products.length - 1))],
-      10 * Math.floor(Math.random() * Math.floor(100))
+      10 * Math.floor(Math.random() * Math.floor(100)) || 1
     ));
   }
   return result;
